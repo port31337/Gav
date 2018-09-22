@@ -19,3 +19,10 @@ Mask:
 
 Ограничение: Все задания надо выполнять используя только пройденные темы.
 '''
+a = input("IP-network: ")
+b = a.split("/")
+c, d = b
+print(c, d)
+c = c.split("." )
+e, f, g, h = c
+print("Network:\n", "{:10} {:10}{:10} {:10}".format(e, f, g, h))
