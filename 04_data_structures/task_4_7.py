@@ -9,3 +9,5 @@
 '''
 
 MAC = 'AAAA:BBBB:CCCC'
+mac = MAC[:4]+MAC[5:9]+MAC[10:-1]
+print(bin(int(mac, 16)))
