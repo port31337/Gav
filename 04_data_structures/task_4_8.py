@@ -19,3 +19,7 @@
 '''
 
 IP = '192.168.3.1'
+IP = IP.split('.')
+IP = [int(i) for i in IP]
+print('{:<10} {:<10} {:<10} {:<10}'.format(IP[0], IP[1], IP[2], IP[3]))
+print('{:010b} {:010b} {:010b} {:010b}'.format(IP[0], IP[1], IP[2], IP[3]))
