@@ -22,7 +22,10 @@ Mask:
 a = input("IP-network: ")
 b = a.split("/")
 c, d = b
-print(c, d)
+print(d)
 c = c.split("." )
+c = [int(i) for i in c]
 e, f, g, h = c
-print("Network:\n", "{:10} {:10}{:10} {:10}".format(e, f, g, h))
+
+print("Network:\n", "{:<10} {:<10} {:<10} {:<10}".format(e, f, g, h))
+print(' {:010b} {:010b} {:010b} {:010b}'.format(e, f, g, h))
