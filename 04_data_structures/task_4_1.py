@@ -10,4 +10,5 @@
 '''
 
 NAT = 'ip nat inside source list ACL interface FastEthernet0/1 overload'
-print(6)
+NAT = NAT.replace('Fast', 'Gigabit')
+print(NAT)
