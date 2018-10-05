@@ -43,3 +43,8 @@ london_co = {
         'routing': True
     }
 }
+x = input("Name device: ")
+print(london_co[x].keys())
+y = input("Option: ")
+y = y.lower()
+print(london_co[x].get(y, 'Такого параметра нет'))
